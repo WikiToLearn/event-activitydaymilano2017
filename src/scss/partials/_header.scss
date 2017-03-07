@@ -1,0 +1,58 @@
+header {
+	position: fixed;
+	width: 100%;
+
+	background-color: #37abc8;
+	box-shadow: 0 0 3px rgba(0,0,0,0.35);
+	padding: 0.5rem 5rem;
+
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 800px){
+		display: block;
+		padding: 0.5rem;
+		position: relative;
+	}
+
+	.logo{
+		@media (max-width: 800px){
+			text-align: center;
+		}
+		margin-right: auto;
+		h1{
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0;
+			color: white;
+			font-weight: normal;
+		}
+		img{
+			width: 3rem;
+			vertical-align: middle;
+			margin-right: 0.25rem;
+		}
+	}
+
+	nav{
+		@media (max-width: 800px){
+			text-align: center;
+		}
+		a{
+			display: inline-block;
+			padding: 0.75rem;
+			padding-top: 1rem;
+
+			text-transform: uppercase;
+			text-decoration: none;
+
+			font-weight: bold;
+			color: white;
+
+			&:hover{
+				background-color: #2d89a0;
+			}
+		}
+	}
+
+}
