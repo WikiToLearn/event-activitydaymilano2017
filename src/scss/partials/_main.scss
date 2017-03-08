@@ -35,6 +35,10 @@ main {
 				font-style: italic;
 				margin-bottom: 1.5rem;
 			}
+			small{
+				display: inline-block;
+				font-size: 1.25rem;
+			}
 			.where{
 				margin-bottom: 1.5rem;
 			}
@@ -67,6 +71,7 @@ main {
 	.about{
 		.cols{
 			display: flex;
+			align-items: center;
 			@media (max-width: 800px){
 				display: block;
 			}
@@ -224,7 +229,13 @@ main {
 	}
 
 	.organizers{
-
+		.coc-container{
+			margin-top: 1rem;
+			text-align: center;
+			a{
+				color: #2d89a0;
+			}
+		}
 		.organizers-content{
 			display: flex;
 			flex-wrap: wrap;

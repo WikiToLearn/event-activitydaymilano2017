@@ -469,6 +469,9 @@ main .hero {
     main .hero .content .name {
       font-style: italic;
       margin-bottom: 1.5rem; }
+    main .hero .content small {
+      display: inline-block;
+      font-size: 1.25rem; }
     main .hero .content .where {
       margin-bottom: 1.5rem; }
     main .hero .content .register {
@@ -491,7 +494,10 @@ main .hero {
 main .about .cols {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 800px) {
     main .about .cols {
       display: block; } }
@@ -620,6 +626,12 @@ main .speakers {
         border-radius: 50%; }
       main .speakers .speakers-content .speaker-wrapper .details .name {
         font-weight: bold; }
+
+main .organizers .coc-container {
+  margin-top: 1rem;
+  text-align: center; }
+  main .organizers .coc-container a {
+    color: #2d89a0; }
 
 main .organizers .organizers-content {
   display: -webkit-flex;
